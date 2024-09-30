@@ -1,0 +1,88 @@
+
+  body {
+    font-family: "lato" sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    padding: 30px;
+    color:$color-grey-dark;
+  }
+  .heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 100px;
+
+    &-main {
+        display: block;
+        letter-spacing: 33px;
+        font-size: 26px;
+        font-weight: 700;
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+        text-shadow: 0 12px 10px rgba($color-black, 0.4);
+        /*animation-delay: 2s;*/
+      }
+
+      &-sub {
+        display: block;
+        letter-spacing: 15px;
+        font-size: 13.4px;
+        font-weight: 700;
+        animation-name: moveInRight;
+        animation-duration: 3s;
+        /*animation-delay: 2s;*/
+      }
+  }
+  .heading-secondary{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+ 
+
+ &:hover{
+  font-size: 1.2rem;
+  transform:skewY(1deg) skewX(5deg) scale(1);
+  text-shadow: .15rem 0rem 3rem rgba($color-black, 0.4);
+ }
+
+ }
+
+ .heading-tertiary{
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, $color-primary-dark ,$color-primary-light);
+  display:inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+ -webkit-text-fill-color: transparent;
+
+ }
+ .heading-tertiary-1{
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+ }
+
+ .paragraphy{
+  font-size: 1rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-black,$color-black);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color:transparent;
+  -webkit-text-fill-color: transparent;
+
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+ }
